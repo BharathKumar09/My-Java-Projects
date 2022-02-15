@@ -1,0 +1,33 @@
+package properties;
+
+import java.util.Arrays;
+
+public class person {
+	
+	static int age;
+	static String address;
+	
+	public static void main(String[] args) {
+		
+       person michael=new person();
+		
+		person.age=30;
+	    person.address="Hyderabad";
+	    System.out.println(michael.age);
+		System.out.println(michael.address);
+		
+		String path="C:\\Desktop:\\Documents:\\files";
+		
+		System.out.println(path);
+		System.out.println("C:\\Desktop:\\"+'\n'+"\\Documents:\\files");
+		  int[] numbers=new int[5];
+		  numbers[0]=1;
+		  numbers[1]=10;
+		  numbers[2]=20;
+		  numbers[3]=60;
+		  numbers[4]=50;
+		  System.out.println(numbers);
+		  System.out.println(Arrays.toString(numbers));
+		
+	}
+}

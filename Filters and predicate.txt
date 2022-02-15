@@ -1,0 +1,27 @@
+Finding the age of the Employees greater than 25
+
+package hcl.sampleproj;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
+public class stream {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		HashMap<Integer,String>Employee=new HashMap<Integer,String>();
+		
+		Employee.put(10,"john");
+		Employee.put(20,"ryan");
+		Employee.put(30, "David");
+		Employee.put(40,"ram");
+		
+		HashMap<Integer,String>age=(HashMap<Integer, String>) Employee.entrySet()
+		
+		     .stream()
+		     .filter(Map->Map.getKey().intValue()>25)
+		     .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+
+		     System.out.println("The Excepted output of age of Employees is "  +age);
+		     }

@@ -1,0 +1,27 @@
+package com.hcl;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class ExceptionHandling {
+	
+	public static void FindFile() throws IOException{
+		
+		File NewFile=new File("abc.txt");
+		FileInputStream Stream= new FileInputStream(NewFile);
+		
+	}
+	
+	        public static void main(String[] args) {
+	   try
+	{
+		
+		FindFile();
+		}
+	   catch(IOException e) {
+		     System.out.println(e);
+	   }
+	   
+	    }
+	        }
